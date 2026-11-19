@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Шапка */
+        header {
+            background: #f8b5c1;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #fff4df;
+            padding: 15px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #59404b;
+            font-weight: bold;
+        }
+
+        /* Головний екран */
+        .hero {
+            background: #f6b4c2;
+            padding: 90px 40px;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #402c3b;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* Кнопки */
+        button {
+            background: #ffe16a;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ffc94d;
+            transform: scale(1.05);
+        }
+
+        /* Про нас */
+        .about {
+            padding: 65px 30px;
+            text-align: center;
+            background: #fffdf7;
+        }
+
+        .about h2,
+        .products h2 {
+            font-size: 34px;
+            margin-bottom: 25px;
+        }
+
+        /* Асортимент */
+        .products {
+            background: #f8c4cf;
+            padding: 60px 25px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #fffaf5;
+            width: 260px;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px #bd899955;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .product-card h3 {
+            margin: 15px;
+            color: #624454;
+        }
+
+        /* Смаки */
+        .flavors {
+            padding: 70px 30px;
+            text-align: center;
+            background: #fffdf7;
+        }
+
+        /* Відгуки */
+        .reviews {
+            background: #f8c4cf;
+            padding: 60px 25px;
+            text-align: center;
+        }
+
+        .review-card {
+            background: white;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 500px;
+            border-radius: 18px;
+        }
+
+        /* Підвал */
+        footer {
+            background: #ffdf68;
+            padding: 35px;
+            text-align: center;
+            color: #493b30;
+        }
+    </style>
+    <header>
+        <a href="#main"> <img src="img/logo.png" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="#main">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#goods">Товари</a></li>
+                <li><a href="#taste">Вкус</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul>
+        <li>
+            <img src="img/shopping-cart1.png" alt="">
+        </li>
+        
+        <li>
+            <img src="img/Heart.png" alt="">
+        </li>
+        </ul>
+    </header>
+    <main>
+
+        <section id="main">
+            <h1>Спробуй найкраще морозиво</h1>
+            <p>Справжнє італійське джелато з натуральних інгредієнтів.
+                Ми створюємо морозиво з любов'ю вже понад 15 років,
+                використовуючи лише свіжі фрукти, справжні вершки
+                та перевірені сімейні рецепти.</p>
+            <button>Дізнатись більше</button>
+            <img src="img/Untitleddesign(27)1.png" alt="">
+        </section>
+        <section id="about">
+            <h2>Ми дбаємо про тебе!</h2>
+            <img src="img/Untitleddesign(6)1.png" alt="">
+            <p>Наше морозиво — це не просто десерт, це справжня магія смаку. Ми використовуємо тільки натуральне молоко
+                з українських ферм та свіжі сезонні фрукти.
+                Кожна порція містить любов та турботу наших
+                майстрів, які вдосконалюють рецепти вже три
+                покоління.</p>
+            <img src="img/Untitleddesign(7)1(1).png" alt="">
+            <p>Історія нашої родинної справи почалася у 1998 році,
+                коли бабуся Марія вперше приготувала морозиво за
+                італійським рецептом. Сьогодні ми зберігаємо традиції,
+                поєднуючи їх із сучасними технологіями.
+
+                Ми віримо: морозиво має приносити радість! Тому
+                ретельно обираємо кожен інгредієнт та контролюємо
+                якість на всіх етапах виробництва.</p>
+            <button>Дізнатись більше</button>
+            <button>Спробувати</button>
+        </section>
+        <section id="goods">
+            <h2>Наш асортимент</h2>
+            <ul>
+                <li><img src="Untitleddesign(16)1.png" alt="rozok">
+                    <h3>Розок</h3><img src="Untitleddesign(21)1.png" alt="">
+                    <p>Хрусткі вафельні ріжки з ніжним
+                        morozivom. Класика, яка ніколи
+                        не виходить з моди!</p><button><img src="Arrow1.png" alt=""></button>
+                </li>
+                <li>
+                    <img src="Untitleddesign(13)2.png" alt=""><h3>Smothie</h3>
+                    <p>Освіжаючі молочні коктейлі та
+                        смузі на основі морозива.
+                        Ідеально для спекотного дня!</p><button><img src="Arrow1.png" alt=""></button>
+                </li>
+                <li><img src="Untitleddesign(11)1.png" alt="ice cream">
+                    <h3>Морозиво</h3><img src="Untitleddesign(18)1.png" alt="">
+                    <p>Різноманітні смаки на паличці
+                        та у стаканчиках. Понад 20
+                        видів на будь-який смак! </p><button><img src="Arrow1.png" alt=""></button>
+                </li>
+            </ul>
+        </section>
+        <section id="taste">
+            <ul>
+                <li>
+                    <p>Ваніль</p>
+                </li>
+                <li>
+                    <p>Чорниця</p>
+                </li>
+                <li>
+                    <p>Шоколад</p>
+                </li>
+                <li>
+                    <p>Полуниця</p>
+                </li>
+                <li>
+                    <p>Фісташка</p>
+                </li>
+                <li>
+                    <p>Манго</p>
+                </li>
+            </ul>
+            <img src="Group63.png" alt="">
+            <h2>Небесні смаки</h2>
+            <img src="Group56(1).png" alt="">
+            <p>
+                Відкрийте для себе унікальні комбінації смаків!
+            Від класичної ванілі до екзотичного манго — кожен знайде своє улюблене морозиво.
+            Наші майстри постійно експериментують,
+            створюючи нові рецепти.
+            </p>
+            <ul>
+                <li>
+                    <button>
+                        <span>Дізнайся більше</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <span>Спробувати</span>
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2 style="display: none;">Зв'язатися з нами</h2>
+            <form>
+                <input type="email" placeholder="Введіть ваш email">
+                <button type="submit">Зв'язатися</button>
+            </form>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"> <img src="openmoji_facebook.png" alt="Facebook"> </a>
+                </li>
+                <li>
+                     <a href="https://www.instagram.com/?hl=uk" target="_blank"> <img src="icon-park_instagram.png" alt="Instagram"> </a>
+                </li>
+            </ul>
+            <img src="Ellipse7.png" alt="">
+        </section>
+
+    </main>
+    <footer>
+        <a href="">Rainbow Ice Cream</a>
+        <nav>
+            <ul>
+                <li><a href="#main">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+        <input type="email" placeholder="Підписатися на новини">
+        <button type="submit">Зв'язатися</button>
+        <p>© 2026 Rainbow Icecream Лендінг розроблено [Ім'я учня]</p>
+    </footer>
+</body>
+
+</html>
